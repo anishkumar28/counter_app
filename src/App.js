@@ -8,9 +8,9 @@ function App() {
   let [counter,setCounter] = useState(0);
 
   const increaseValue = () => {
-    counter = counter + 1;
-    setCounter(counter);
-    console.log('clicked', counter)
+    setCounter(counter => counter + 1);
+    setCounter(counter => counter + 1);
+    setCounter(counter => counter + 1);
   }
 
   const decreaseValue = () => {
